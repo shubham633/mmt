@@ -3,8 +3,6 @@ import { RNNDrawer } from "react-native-navigation-drawer-extension";
 import { Navigation } from 'react-native-navigation'
 import Icon from "react-native-vector-icons/FontAwesome";
 import Icons from '../components/Icons';
-import {createAppContainer} from 'react-navigation';
-import {createDrawerNavigator} from 'react-navigation-drawer';
 
 
 export const AuthStack = () => Navigation.setRoot({
@@ -138,12 +136,11 @@ export const Drawer = () =>{
         direction: "left",
         dismissWhenTouchOutside: true,
         fadeOpacity: 0.6,
-        drawerScreenWidth: "75%" || 445, // Use relative to screen '%' or absolute
+        drawerScreenWidth: "75%" || 445, 
         drawerScreenHeight: "100%" || 700,
-        style: { // Styles the drawer container, supports any react-native style
+        style: { 
           backgroundColor: "white",
         },
-       // Custom prop, will be available in your custom drawer component props
       },
     }
   });
